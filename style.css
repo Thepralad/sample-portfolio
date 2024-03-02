@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     display: flex;
     flex-direction: column;
@@ -9,6 +12,7 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: lighter;
     justify-content: space-between;
+    
 }
 .header{
     display: flex;
@@ -18,7 +22,7 @@ body{
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 4px 8px 0 rgba(115, 114, 114, 0.2), 0 6px 20px 0 rgba(127, 126, 126, 0.19);
-    
+    flex-wrap: wrap;
 }
 .name{
     margin-left: 200px;
@@ -36,6 +40,7 @@ body{
 .header a{
     text-decoration: none;
     color: black;
+   
 }
 .content{
     display: flex;
@@ -43,25 +48,38 @@ body{
     justify-content: space-evenly;
     height: 500px;
     font-weight: lighter;
+    flex-wrap: wrap;
+
     
 }
 .content img{
     border-radius: 200px;
+    padding-bottom: 30px;
 }
 .content .info{
     width: 400px;
     font-size: 20px;
     font-weight: lighter;
-   
+}
+.content .info h4{
+    font-weight: 400;
+    font-size: 26px;
 }
 .content .info p{
     margin-top: 20px;
+    font-size: 15px;
+}
+.content .info .skill{
+    padding-top: 40px;
+    display: flex;
+    gap:20px;
+    
 }
 
 .contact{
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 290px;
     align-items: center;
     justify-content: center;
     gap: 40px;
@@ -83,6 +101,9 @@ body{
 .contact .social a{
    margin-left: 50px;
    margin-right: 50px;
+}
+.contact .social a:hover{
+    transition-delay: 1s;
 }
 
 .footer{
